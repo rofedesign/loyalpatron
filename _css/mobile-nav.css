@@ -1,0 +1,131 @@
+[role='main'] {
+	margin: 5% auto;
+}
+[role='navigation'] {
+	margin: 0 auto;
+	width: 100%;
+	background-color: #d9d8c3;
+	/*border-radius: 0px 0px 6px 6px;
+	-moz-border-radius: 0px 0px 6px 6px;
+	-webkit-border-radius: 0px 0px 6px 6px;*/
+}
+.flexNav-touch [role='navigation'],
+.flexNav-no-touch [role='navigation'] {	
+	display: none;
+}
+.menu-button {
+	display: block;
+	padding: 8px 8px 8px 12px;
+	font-size: 12px;
+	color: #000;
+	background-image: url('../_graphics/navigation/arrow-down-mobile.png');
+	background-repeat: no-repeat;
+	background-position: right 10px;
+	cursor: pointer;
+	font-family: 'Open Sans', Arial, sans-serif;
+	background-color: #f0efe1;
+	border-radius: 6px 6px 0px 0px;
+	-moz-border-radius: 6px 6px 0px 0px;
+	-webkit-border-radius: 6px 6px 0px 0px;
+	text-transform: uppercase;
+}
+[role='navigation']:after { /* clearfix */
+	visibility: hidden;
+	display: block;
+	font-size: 0;
+	content: " ";
+	clear: both;
+	height: 0;
+}
+
+[role='navigation'] li {
+	position: relative;
+	list-style: none;
+	display: block;
+	/*background-color: #D75623;*/
+	width: 100%;
+}
+
+[role='navigation'] li.item-with-ul {
+	/*background-color: #0C0;	*/		
+}
+
+[role='navigation'] li a {
+	margin-right: 0px;
+	font-size: 12px;
+	display: block;
+	color: #000;
+	text-decoration: none;
+	border-top: 1px solid #f0efe1;
+	font-family: 'Open Sans', Arial, sans-serif;
+	
+}
+[role='navigation'] li a:hover {
+	/* color: #FFF; */
+	/*text-decoration: underline;*/
+}
+
+
+[role='navigation'] li a.link-with-ul {
+	/*border-right: 1px solid #222;*/
+	
+	text-transform: uppercase;		
+}
+
+[role='navigation'] .top-level a {
+	position: relative;
+	display: block;
+	padding: 8px 8px 8px 12px;
+	z-index: 2;
+}
+
+[role='navigation'] li ul {
+	width: 100%;
+	position: relative;
+	/*border-top: 1px solid #333;
+	border-bottom: 1px solid #333;*/
+}
+[role='navigation'] li ul li {
+	float: none;
+	width: 100%;
+	/*border-top: 1px solid #333;*/			
+}
+
+[role='navigation'] li ul li a {
+	display: block;
+	background-color: #f0efe1;
+	color: #000;
+}
+[role='navigation'] li ul li a:hover {
+	display: block;
+	color: #000;
+	background-color: #fff;
+	text-decoration:none;
+}
+.sub-menu li a {
+	border-top: 1px solid #d9d8c3;
+}
+.nohover a {
+	background-color: #f0efe1 !important;
+}
+.secondary {
+	/*background-color: #d9d8c3 !important;*/
+}
+.secondaryli {
+	border-top: none !important;
+	/*background-color: #d9d8c3 !important;*/
+}
+
+/*[role='navigation'] .item-with-ul {
+	background-image: url('../images/navigation/arrow-down-mobile.png');
+	background-repeat: no-repeat;
+	background-position: right 14px;
+}*/
+.sub-menu {
+	display: none;
+}
+.sub-menu.open {
+	display: block;
+}
+
+

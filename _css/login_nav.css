@@ -1,0 +1,159 @@
+/* NAVIGATION */
+
+/* This CSS file is a copy of the desktop nav with class names changed - not sure if these is needed
+#nav1 {
+	/*
+	width: 100%;
+	height: 10px;
+	clear: both;
+	background-color:#000;
+	border-radius: 6px 6px 0px 0px;
+	-moz-border-radius: 6px 6px 0px 0px;
+	-webkit-border-radius: 6px 6px 0px 0px; */
+}
+
+
+#nav-desktop {
+	border-top: 2px solid #7e7e7e;
+	background-color: #f0efe1;
+	
+}
+
+#loginNav {
+	text-align: right;
+	font-family: Arial, sans-serif;
+	background-color: #7e7e7e;
+	color: #FFFFFF;
+	padding: 5px 0;
+	border-bottom: 1px solid #000000;
+}
+
+#loginNav ul {
+    list-style-type: none;
+    margin: 0 0 0 0;
+    padding: 0;
+}
+
+
+#loginNav ul a {
+	color: #FFFFFF;
+	padding: 4px 10px;
+	text-decoration: none;
+	font-size: 13px;
+}
+
+
+
+#nav-login{
+	list-style:none;
+	float:left;
+	width:100%;
+	margin-left: 0;
+	position:relative;
+	z-index:100;
+	background-color: #7e7e7e;	
+}
+
+
+#nav-login li{
+	float:right;
+	position:relative;
+	padding: 0 6px;
+	border-right-width: 1px;
+	border-right-style: solid;
+	border-right-color: #FFFFFF;
+}
+
+
+
+#nav-login li.login-button a:hover {
+	background-color: #6e548f;
+	/* border: 2px solid #e9ba42; */
+	color: #FFFFFF;
+}
+
+
+
+#nav-login li.last{
+	border: none;
+}
+
+#nav-login li.social{
+	padding: 0;
+}
+
+#nav-login a{
+	font-family: 'Open Sans', Arial, sans-serif;
+	display:block;
+	padding-left:20px;
+	padding-right:20px;
+	color:#FFFFFF;
+	text-decoration:none;
+	font-size:12px;
+	text-transform: uppercase;
+	padding-top: 8px;
+	padding-bottom: 4px;
+	/*border-right-width: 1px;
+	border-right-style: solid;
+	border-right-color: #333;*/
+}
+
+
+
+
+/* Navigation Dropdown */
+
+#nav-login ul{
+	list-style:none;
+	position:absolute;
+	left:-9999px;
+}
+
+#nav-login ul li{
+	float:none;
+	border-right-style: none;
+	width: 230px;
+	text-align: left;
+}
+
+#nav-login ul a{
+	white-space:nowrap; /* Stop text wrapping and creating multi-line dropdown items */
+	text-transform: none;
+	padding-right:60px;
+}
+
+#nav-login li:hover ul.primary{ /* Display the dropdown on hover */
+	left:0; /* Bring back on-screen when needed */
+}
+
+#nav-login li ul li:hover ul{ /* Display the dropdown on hover */
+	left:226px;
+	top:0px; /* Bring back on-screen when needed */
+}
+
+#nav-login li:hover a{ /* These create persistent hover states, meaning the top-most link stays 'hovered' even when your cursor has moved down the list. */
+	text-decoration:none;
+	background-color: #CCCCCC;
+	color:#000;
+}
+
+#nav-login li:hover a.social {	/* these keeps social media links from having a hover */
+	background-color: #7e7e7e;
+}
+
+
+#nav-login li:hover ul a{ /* The persistent hover state does however create a global style for links even before they're hovered. Here we undo these effects. */
+	text-decoration:none;
+	background-color: #CCCCCC;
+	border-right-width: 0px;
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+	border-bottom-color: #7e7e7e;
+}
+#nav-login li:hover ul li a:hover{ /* Here we define the most explicit hover states--what happens when you hover each individual link. */
+	text-decoration:none;
+	background-color: #7e7e7e;
+	color: #FFFFFF;
+}
+
+

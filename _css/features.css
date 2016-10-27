@@ -1,0 +1,380 @@
+/* Blue #315b86; */
+
+
+body {
+	/* Needed on pages with new login nav - don't understand why */
+}
+
+option, select {
+	font-family: 'Open Sans', Arial, sans-serif;
+}
+
+.newH2 {
+	font-family: 'Open Sans', Arial, sans-serif;
+	font-weight: bold;
+	font-size: 19px;
+	text-transform: uppercase;
+	margin-top: 0;
+}
+
+#video {
+	margin: 20px 0 60px 0 ;
+	float: left;
+	clear: right;
+	width: 100%;
+}
+
+.vAlign {
+	vertical-align: middle;
+}
+
+.right {
+	text-align: right;
+}
+
+.dropShadow {
+	text-shadow: 2px 2px #000000;	
+}
+
+
+#serviceBg {
+	/* background-image: url(../_images/home_page_bg_contractor.jpg); */
+	background-position: right;
+	background-repeat: no-repeat;
+}
+
+
+
+/* Not working */
+#bnrBack {
+ background-position: top right;
+ background-repeat: no-repeat;
+ background-image: none;
+}
+
+
+#bnrTagline {
+	padding: 5px 0 5px 20px;
+	background-image: url(../_images/bg_bnr_coffee.png), url(../_images/bkgrd_gradient_background.jpg);
+	background-repeat: no-repeat, repeat-x;
+	background-position: top right, top left;
+	background-size: 70%, ;
+
+}
+
+#bnrTagline h1, #bnrTagline h2 {
+	color: #FFFFFF;
+	margin: 20px 10px 0 0;
+}
+
+#bnrTagline h2 {
+	font-family: 'Open Sans', Arial, sans-serif;
+	font-weight: bold;
+	text-transform: none;
+	margin: 0 0 20px 0;
+}
+
+#colLeft, #colRight {
+	/* border: 1px solid red; */
+}
+
+#colLeft {
+	float:left;
+	width: 60%;
+	text-align: left;
+	margin-bottom: 30px;
+}
+
+#colLeft img {
+	float: left;
+	margin: 0 15px 15px 0;
+}
+
+#colRight {
+	float: right;
+}
+
+.colRight {
+	float: right;
+	/* border: 1px solid red; */
+	clear: right;
+}
+
+.phoneHeader {
+	font-style: italic;
+	margin: 0 20px 0 0;
+	/* margin: 4px 20px 4px 0; */
+	font-family: 'Open Sans', Arial, sans-serif;
+	color: #315b86;
+}
+
+.clear {
+	clear: both;
+	margin: 10px 0 10px 0;
+	padding: 5px;
+}
+
+.marginLeft {
+	margin-left: 50px;
+}
+
+.marginRight {
+	margin-right: 50px;
+}
+
+#colRight img {
+	margin-right: 40px;
+}
+
+.testimonial {
+	padding-top: 50px;
+}
+
+iframe {
+	/* border: 3px solid #acacac; COMMENTED OUT TO REMOVE BORDER AROUND FORMS - Not sure what else this will affect*/
+}
+
+#featureBar {
+	text-align: center;
+}
+
+#featureBar img{
+    width:100%;
+    max-width:600px;
+}
+
+.blueLink {
+	color: #336699;
+	text-decoration: underline;
+}
+
+.floatLeft {
+	float: left;
+}
+
+.floatRight {
+	float: right;
+}
+
+.clearBoth {
+	clear: both;
+	padding: 10px 0 10px 0;
+	margin: 20px 0;
+}
+
+.clearBoth h2{
+	text-align: center;
+}
+
+.center {
+	text-align: center;
+}
+
+.col20 {
+	float:left;
+	width: 20%;
+}
+
+.col30 {
+	float:left;
+	width: 30%;
+}
+
+.col40 {
+	width: 40%;
+	float:left;
+}
+
+.col50 {
+	width: 49%;
+	float: left;
+}
+
+.col60 {
+	width: 60%;
+	float: left;
+}
+
+.col70 {
+	float:left;
+	width: 70%;
+}
+
+.col80 {
+	float:left;
+	width: 70%;
+	margin-left: 2%;
+}
+
+.col100 {
+	float: left;
+	width: 100%;
+}
+
+/* TEST FOR GUTTER */
+.col47 {
+	float: left;
+	width: 47%;
+}
+.col6 {
+	float: left;
+	width: 6%;
+}
+/* END TEST */
+
+
+#containerWhite {
+	background-color: #FFFFFF;
+	padding: 30px;
+	font-family: Arial;
+}
+
+section {
+	/* border: 1px solid orange; */
+}
+
+.contentContainer {
+	padding-right: 20px;
+}
+
+.border {
+	border: 1px solid red; /* for diagnoses */
+}
+
+.featureContent {
+	font-size: 12px;
+}
+
+.gutter {
+	color: #FFFFFF;
+}
+
+.icon {
+	min-width: 80px;
+}
+
+.under {
+	text-decoration: underline;
+}
+
+.auto_bnr_bg {
+	background-image: url(../businesses/auto_land_bg_banner1.png);
+	background-repeat: no-repeat;
+	background-position: top left;
+
+}
+
+.tagLineText {
+	width: 100%;
+	max-width: 358px;
+	background-color: #f0efe1;
+	border-bottom: 1px solid black;
+	border-left: 1px solid black;
+	border-right: 1px solid black;
+	padding: 10px 0;
+}
+/*
+.red {
+	background-color: red;
+}
+*/
+
+/* BEGIN mobile homepage and feature page */
+@media only screen and (max-width: 480px) {
+
+#colRight, #phoneUSA, #phoneCAN, #linkFB, #linkTW {
+ 	display: none;
+ }
+#bnrTagline {
+	/* max-width: 360px; */
+}
+
+
+#bnrTagline {
+	padding: 5px 10px 5px 10px;
+	background-image: none, none;
+	background-size: 2%;
+}
+
+#logo img{
+	width: 300px;
+/*
+	margin: 10px 0 0 45px;
+	text-align: center;
+*/
+}
+
+#loginNav ul li {
+	margin: 0;
+	padding: 0;
+}
+
+
+#loginNav ul li a {
+	font-size: 10px;
+	font-weight: bold;
+}
+
+H1.dropShadow {
+	font-size: 16px;
+	font-weight: bold;
+}
+
+H2.dropShadow {
+	font-size: 12px;
+	font-weight: normal;
+}
+
+#video iframe {
+	max-width: 280px;
+	max-height: 156px;
+}
+
+#video {
+	margin: 10px 0 30px 0 ;
+}
+
+.col100 {
+	width: 100%;
+	/* border: 1px solid orange; */
+	min-width: 310px;
+	width: 98%;
+	padding-bottom: 10px;
+	margin-bottom: 0;
+	border-bottom: 1px;
+	border-bottom-color: black;
+	border-bottom-style: solid;
+}
+
+.col20 {
+	width: 50px;
+	float: left;
+	clear: none;
+	/* border: 1px solid green; */
+}
+
+.col20 img {
+	width: 60px;
+	height: 50px;
+}
+
+
+.col80 {
+	width: 80%;
+	/* border: 1px solid red; */
+	float: left;
+	clear: none;
+	/* padding-left: 15px; */
+}
+
+#nav-login .login-button {
+	display: none;
+}
+
+#footer {
+	font-size: 8px;
+}
+
+
+}
+/* END mobile homepage adn feature page */

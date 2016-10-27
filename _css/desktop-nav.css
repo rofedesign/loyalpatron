@@ -1,0 +1,107 @@
+/* NAVIGATION */
+
+#nav1 {
+	/*width: 100%;
+	height: 10px;
+	clear: both;
+	background-color:#000;
+	border-radius: 6px 6px 0px 0px;
+	-moz-border-radius: 6px 6px 0px 0px;
+	-webkit-border-radius: 6px 6px 0px 0px;*/
+}
+
+
+#nav-desktop {
+	/* border: 2px solid #7e7e7e; */
+	border-top: 2px solid #7e7e7e;
+	background-color: #f0efe1;
+	
+}
+
+#nav-desktop{
+	list-style:none;
+	float:left;
+	width:100%;
+	margin-left: 0;
+	position:relative;
+	z-index:100;
+	
+}
+
+
+#nav-desktop li{
+	float:left;
+	position:relative;
+	border-right-width: 1px;
+	border-right-style: solid;
+	border-right-color: #d9d8c3;
+}
+#nav-desktop li.last{
+	border: none;
+}
+#nav-desktop li a.active{
+}
+#nav-desktop li a {
+}
+
+#nav-desktop a{
+	font-family: 'Open Sans', Arial, sans-serif;
+	display:block;
+	padding-left:20px;
+	padding-right:20px;
+	color:#000;
+	text-decoration:none;
+	font-size:12px;
+	text-transform: uppercase;
+	padding-top: 8px;
+	padding-bottom: 8px;
+	/*border-right-width: 1px;
+	border-right-style: solid;
+	border-right-color: #333;*/
+}
+
+
+
+
+/* Navigation Dropdown */
+
+#nav-desktop ul{
+	list-style:none;
+	position:absolute;
+	left:-9999px;
+}
+#nav-desktop ul li{
+	float:none;
+	border-right-style: none;
+	width: 230px;
+}
+#nav-desktop ul a{
+	white-space:nowrap; /* Stop text wrapping and creating multi-line dropdown items */
+	text-transform: none;
+	padding-right:60px;
+}
+#nav-desktop li:hover ul.primary{ /* Display the dropdown on hover */
+	left:0; /* Bring back on-screen when needed */
+}
+#nav-desktop li ul li:hover ul{ /* Display the dropdown on hover */
+	left:226px;
+	top:0px; /* Bring back on-screen when needed */
+}
+#nav-desktop li:hover a{ /* These create persistent hover states, meaning the top-most link stays 'hovered' even when your cursor has moved down the list. */
+	text-decoration:none;
+	background-color: #f0efe1;
+	color:#000;
+	
+}
+#nav-desktop li:hover ul a{ /* The persistent hover state does however create a global style for links even before they're hovered. Here we undo these effects. */
+	text-decoration:none;
+	background-color: #d9d8c3;
+	border-right-width: 0px;
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+	border-bottom-color: #f0efe1;
+}
+#nav-desktop li:hover ul li a:hover{ /* Here we define the most explicit hover states--what happens when you hover each individual link. */
+	text-decoration:none;
+	background-color: #f0efe1;
+}
